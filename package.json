@@ -1,8 +1,8 @@
 {
-  "name": "mmm-template",
+  "name": "mmm-airquality",
   "version": "1.0.0",
-  "description": "[Module description]",
-  "main": "MMM-Template.js",
+  "description": "MagicMirror module to display Air Pollution data from OpenWeatherMap.org",
+  "main": "MMM-AirQuality.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+[GitHub url].git"
+    "url": "git+https://github.com/bluerhodfa/MMM-AirQuality.git.git"
   },
   "keywords": [
-    "template"
+    "MagicMirror, module, AirQuality"
   ],
-  "author": "[Author]",
+  "author": "Ira Theobold",
   "license": "MIT",
   "bugs": {
-    "url": "[GitHub url]/issues"
+    "url": "https://github.com/bluerhodfa/MMM-AirQuality.git/issues"
   },
-  "homepage": "[GitHub url]#readme",
+  "homepage": "https://github.com/bluerhodfa/MMM-AirQuality.git#readme",
   "devDependencies": {
     "@eslint/js": "^9.10.0",
     "@stylistic/eslint-plugin": "^2.7.2",

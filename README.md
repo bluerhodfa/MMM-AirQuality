@@ -1,11 +1,10 @@
-# MMM-Template
-Use this template for creating new MagicMirror² modules.
+# MMM-AirQuality
+ MagicMirror² module to display Air Pollution data from OpenWeatherMap.org
 
-See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for an in depth overview of how to get started.
 
-# MMM-Template
+# MMM-AirQuality
 
-![Example of MMM-Template](./example_1.png)
+![Example of MMM-AirQuality](./example_1.png)
 
 [Module description]
 
@@ -13,17 +12,18 @@ See the [wiki page](https://github.com/Dennis-Rosenbaum/MMM-Template/wiki) for a
 
 ### Install
 
-In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-Template:
+In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-AirQuality:
 
 ```bash
 cd ~/MagicMirror/modules
-git clone [GitHub url]
+git clone https://github.com/bluerhodfa/MMM-AirQuality.git
+mpm install
 ```
 
 ### Update
 
 ```bash
-cd ~/MagicMirror/modules/MMM-Template
+cd ~/MagicMirror/modules/MMM-AirQuality
 git pull
 ```
 

@@ -8,11 +8,11 @@
 Module.register("MMM-AirQuality", {
 
   defaults: {
-    text: "Starting MMM-AirQality",
     lat: "",
     log: "",
     apiBase: "",
     apiKey: "",
+    apiVersion: "",
     endPoint: ""
   },
   notifications: {

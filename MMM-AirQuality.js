@@ -2,6 +2,7 @@ Module.register("MMM-AirQuality", {
 
   defaults: {
     text: "Starting MMM-AirQality"
+    
   },
 
   /**
@@ -29,8 +30,8 @@ Module.register("MMM-AirQuality", {
    * @param {any} payload - The payload data`returned by the node helper.
    */
   socketNotificationReceived: function (notification, payload) {
-    if (notification === "EXAMPLE_NOTIFICATION") {
-      this.templateContent = `${this.config.exampleContent} ${payload.text}`
+    if (notification === "START_NOTIFICATION") {
+      this.templateContent = `${this.config.text} ${payload.text}`
       this.updateDom()
     }
   },
@@ -46,7 +47,7 @@ Module.register("MMM-AirQuality", {
   },
 
   addRandomText() {
-    this.sendSocketNotification("GET_RANDOM_TEXT", { amountCharacters: 15 })
+    this.sendSocketNotification("START_NOTIFICATION", { amountCharacters: 15 })
   },
 
   /**
@@ -56,8 +57,8 @@ Module.register("MMM-AirQuality", {
    * @param {number} payload the payload type.
    */
   notificationReceived(notification, payload) {
-    if (notification === "TEMPLATE_RANDOM_TEXT") {
-      this.templateContent = `${this.config.exampleContent} ${payload}`
+    if (notification === "ACTIVATE_NODE_HELPER") {
+      this.config.text = `${this.config.text} ${"Start"}`
       this.updateDom()
     }
   }

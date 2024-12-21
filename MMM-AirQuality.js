@@ -1,8 +1,6 @@
 Module.register("MMM-AirQuality", {
 
 
-  const Log = require("logger");
-
   defaults: {
     text: "Starting MMM-AirQality"
     

@@ -17,7 +17,7 @@ module.exports = {
   },
   loadData: async function (payload) {
     const self = this
-    const url = `https://${payload.config.apiBase}${payload.config.apiVersion}${payload.config.apiEndpoint}/?lat=${payload.config.lat&}lng=${payload.config.lng}&apiKey=${payload.config.apiKey}`
+    const url = `https://${payload.config.apiBase}${payload.config.apiVersion}${payload.config.apiEndpoint}/?lat=${payload.config.lat}&lng=${payload.config.lng}&apiKey=${payload.config.apiKey}`
     console.log(`AirQuality-Fetcher: ${url}`)
 
     const result = await fetch(url)

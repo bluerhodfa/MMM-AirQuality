@@ -18,4 +18,8 @@ module.exports = NodeHelper.create({
     }
      /* Log.info("In node_helper.js"); */
   },
+
+  start: function () {
+    console.log('AirQuality helper started ...')
+  },
 })

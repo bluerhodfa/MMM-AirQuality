@@ -8,7 +8,12 @@
 Module.register("MMM-AirQuality", {
 
   defaults: {
-    text: "Starting MMM-AirQality"
+    text: "Starting MMM-AirQality",
+    lat: "",
+    log: "",
+    apiBase: "",
+    apiKey: "",
+    endPoint: ""
   },
   notifications: {
     DATA: "AIR_QUALITY_DATA",
@@ -34,13 +39,21 @@ Module.register("MMM-AirQuality", {
    * Pseudo-constructor for our module. Initialize stuff here.
    */
   start() {
-    const self = false
+    const self = this
 
     Log.info(`Starting module: ${this.name}`)
     self.loaded = false
 
-    // set timeout for next random text
-    setInterval(() => this.addRandomText(), 3000)
+    if (this.config.apiBase !== '' && this.config.apiKey !== '') {
+      setTimeout(function () {
+        self.sendSocketNotification(self.notification.DATA, {identifier: self.identifier, config: self.config })
+      }, this.config.updateInterval * 60 * 1000 + this.config.initialDelay * 1000)
+
+    // set auto update
+    setInterval(function () {
+      self.sendSocketNotification(self.notifications.DATA, { identifier: self.identifier, config: self.config })
+    }, this.config.updateInterval * 60 * 1000 + this.config.initialDelay * 1000)
+  }
   },
 
   /**

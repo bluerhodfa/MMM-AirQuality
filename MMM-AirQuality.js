@@ -1,11 +1,28 @@
-Module.register("MMM-AirQuality", {
+/* MagicMirror²
+ * Module: MMM-AirQuality
+ *
+ * By Ira theobold https://github.com/bluerhodfa
+ * MIT Licensed.
+ */
 
+Module.register("MMM-AirQuality", {
 
   defaults: {
     text: "Starting MMM-AirQality"
-    
   },
-
+  notifications: {
+    DATA: "AIR_QUALITY_DATA",
+    DATA_RESPONSE: "AIR_QUALITY_DATA_RESPONSE",
+  },
+  colors: {
+    GOOD: '#009966',
+    MODERATE: '#ffde33',
+    UNHEALTHY_FOR_SENSITIVE_GROUPS: '#ff9933',
+    UNHEALTHY: '#cc0033',
+    VERY_UNHEALTHY: '#660099',
+    HAZARDOUS: '#7e0023',
+    UNKNOWN: '#333333',
+  },
   /**
    * Apply the default styles.
    */
@@ -17,7 +34,10 @@ Module.register("MMM-AirQuality", {
    * Pseudo-constructor for our module. Initialize stuff here.
    */
   start() {
-    this.templateContent = this.config.exampleContent
+    const self = false
+
+    Log.info(`Starting module: ${this.name}`)
+    self.loaded = false
 
     // set timeout for next random text
     setInterval(() => this.addRandomText(), 3000)

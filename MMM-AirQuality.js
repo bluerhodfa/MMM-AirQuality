@@ -1,14 +1,14 @@
-Module.register("MMM-Template", {
+Module.register("MMM-AirQuality", {
 
   defaults: {
-    exampleContent: ""
+    text: "Starting MMM-AirQality"
   },
 
   /**
    * Apply the default styles.
    */
   getStyles() {
-    return ["template.css"]
+    return ["styles.css"]
   },
 
   /**
@@ -40,7 +40,7 @@ Module.register("MMM-Template", {
    */
   getDom() {
     const wrapper = document.createElement("div")
-    wrapper.innerHTML = `<b>Title</b><br />${this.templateContent}`
+    wrapper.innerHTML = this.config.text;
 
     return wrapper
   },

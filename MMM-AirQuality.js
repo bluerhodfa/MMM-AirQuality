@@ -9,11 +9,11 @@ Module.register("MMM-AirQuality", {
 
   defaults: {
     lat: "",
-    log: "",
+    lon: "",
     apiBase: "",
-    apiKey: "",
+    appid: "",
     apiVersion: "",
-    endPoint: ""
+    apiEndPoint: ""
   },
   notifications: {
     DATA: "AIR_QUALITY_DATA",

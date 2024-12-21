@@ -5,8 +5,6 @@
  * MIT Licensed.
  */
 
-const NodeHelper = require('node_helper')
-
 module.exports = {
   notifications: {
     DATA: 'AIR_QUALITY_DATA',

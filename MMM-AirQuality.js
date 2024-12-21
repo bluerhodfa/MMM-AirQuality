@@ -11,7 +11,7 @@ Module.register("MMM-AirQuality", {
     lat: "",
     lon: "",
     apiBase: "",
-    appid: "",
+    appId: "",
     apiVersion: "",
     apiEndPoint: ""
   },
@@ -44,7 +44,7 @@ Module.register("MMM-AirQuality", {
     Log.info(`Starting module: ${this.name}`)
     self.loaded = false
 
-    if (this.config.apiBase !== '' && this.config.apiKey !== '') {
+    if (this.config.apiBase !== '' && this.config.appId !== '') {
       setTimeout(function () {
         self.sendSocketNotification(self.notification.DATA, {identifier: self.identifier, config: self.config })
       }, this.config.updateInterval * 60 * 1000 + this.config.initialDelay * 1000)

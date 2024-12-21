@@ -5,6 +5,7 @@
  * MIT Licensed.
  */
 
+const NodeHelper = require('node_helper')
 
 module.exports = {
   notifications: {

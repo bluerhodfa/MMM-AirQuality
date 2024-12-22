@@ -8,6 +8,7 @@
 Module.register("MMM-AirQuality", {
 
   defaults: {
+    updateInterval: 30, // every 30 minutes
     lat: "",
     lon: "",
     apiBase: "",
@@ -75,7 +76,7 @@ Module.register("MMM-AirQuality", {
    */
   getDom() {
     const wrapper = document.createElement("div")
-    wrapper.innerHTML = this.config.text;
+    wrapper.innerHTML = `AQI updated every ${this.config.updateInterval} minutes`;
 
     return wrapper
   },

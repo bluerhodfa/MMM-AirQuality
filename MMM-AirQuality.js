@@ -48,7 +48,7 @@ Module.register("MMM-AirQuality", {
 
     if (this.config.apiBase !== '' && this.config.appId !== '') {
       setTimeout(function () {
-        self.sendSocketNotification(self.notification.DATA, {identifier: self.identifier, config: self.config })
+        self.sendSocketNotification(self.notifications.DATA, {identifier: self.identifier, config: self.config })
       }, this.config.initialDelay * 1000)
 
     // set auto update
@@ -56,6 +56,10 @@ Module.register("MMM-AirQuality", {
       self.sendSocketNotification(self.notifications.DATA, { identifier: self.identifier, config: self.config })
     }, this.config.updateInterval * 60 * 1000 + this.config.initialDelay * 1000)
   }
+  },
+  updateData: function (response) {
+    this.loaded = true
+    this.data.value = response.data.aqi
   },
 
   /**

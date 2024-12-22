@@ -30,7 +30,7 @@ module.exports = {
   socketNotificationReceived: function (notification, payload) {
     switch (notification) {
       case this.notifications.DATA:
-        console.log(`AirQuality-Fetcher: Loading data of ${payload.config.location} for module ${payload.identifier}`)
+        console.log(`AirQuality-Fetcher: Loading data of ${payload.config.lat}, ${payload.config.lon} for module ${payload.identifier}`)
         this.loadData(payload)
         break
     }

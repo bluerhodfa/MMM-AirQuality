@@ -9,12 +9,13 @@ Module.register("MMM-AirQuality", {
 
   defaults: {
     updateInterval: 30, // every 30 minutes
+    initialDelay: 0,
     lat: "",
     lon: "",
-    apiBase: "",
+    apiBase: "api.openweathermap.org/data/",
     appId: "",
-    apiVersion: "",
-    apiEndPoint: ""
+    apiVersion: "2.5",
+    apiEndPoint: "/air_pollution"
   },
   notifications: {
     DATA: "AIR_QUALITY_DATA",
@@ -48,7 +49,7 @@ Module.register("MMM-AirQuality", {
     if (this.config.apiBase !== '' && this.config.appId !== '') {
       setTimeout(function () {
         self.sendSocketNotification(self.notification.DATA, {identifier: self.identifier, config: self.config })
-      }, this.config.updateInterval * 60 * 1000 + this.config.initialDelay * 1000)
+      }, this.config.initialDelay * 1000)
 
     // set auto update
     setInterval(function () {

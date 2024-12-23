@@ -1,0 +1,23 @@
+{# 
+    MagicMirror² 
+    Module: MMM-AirQuality
+ 
+    By Ira theobold https://github.com/bluerhodfa
+    MIT Licensed.
+
+ #}
+
+<div class="small light small">
+    {% if message %}
+        {{ message|safe }}
+    {% elif loaded %}
+        <div style="color: {{ color }}"><i class="fa-solid fa-smog"></i> {{ impact }}{% if showIndex %} ({{ index }}){% endif %}</div>
+            {% if showLocation %}
+        <div class="xsmall">{{ city }}</div>
+            {% endif %}
+    {% else %}
+        <div class="dimmed light small">
+            {{ labelLoading|safe }}
+        </div>
+    {% endif %}
+</div>

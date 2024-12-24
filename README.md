@@ -5,7 +5,7 @@
 # MMM-AirQuality
 
 ![Example of MMM-AirQuality](./AirQualityImage.png)
-![with header location ](./AirQualityImage.png)
+![with header location ](./AirQualityImage1.png)
 
 [Module description]
 

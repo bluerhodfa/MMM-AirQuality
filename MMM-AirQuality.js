@@ -130,24 +130,24 @@ Module.register("MMM-AirQuality", {
     } else if (this.config.location ==='') {
       message = `Please set a location for ${this.name}!`
     }
-  },
 
-  return {
-    loaded: this.loaded,
-    city: this.data.city,
-    index: this.data.value,
-    so2: this.data.so2,
-    no2: this.dat.no2,
-    pm2_5: this.data.pm2_5,
-    pm10: this.data.pm10,
-    o3: this.data.o3,
-    co: this.data.co,
-    impact: this.translate(this.data.impact),
-    colour: this.data.colour,
-    showLocation: this.config.showLocation && !this.config.appendLocationNameToHeader,
-    showIndex: this.config.showIndex,
-    labelLoading: this.translate('LOADING'),
-    message
+    return {
+      loaded: this.loaded,
+      city: this.data.city,
+      index: this.data.value,
+      so2: this.data.so2,
+      no2: this.dat.no2,
+      pm2_5: this.data.pm2_5,
+      pm10: this.data.pm10,
+      o3: this.data.o3,
+      co: this.data.co,
+      impact: this.translate(this.data.impact),
+      colour: this.data.colour,
+      showLocation: this.config.showLocation && !this.config.appendLocationNameToHeader,
+      showIndex: this.config.showIndex,
+      labelLoading: this.translate('LOADING'),
+      message
+    }
   },
   getTranslations: function () {
     return {

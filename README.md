@@ -50,20 +50,20 @@ To use this module, add the following as a minimum to the modules array in the `
 
 ## Configuration options
 
-Option|Possible values|Default|Description
-------|------|------|-----------
-`appId`|`string`|not available| openweathermap.org API key (required)
-`location`|`string`|not available| location to show Air Quality Index values
-`lat`|`string`|numeric format nn.nnnn| latitude of the location (Required)
-`lon`|`string`|numeric format nn.nnnn| longitude of the location (Required)
-`apiBase`|`string`|"api.apenweathermap.org/data/"| openweathermap.org base url (default)
-`apiVersion`|`string`|"2.5"| openweathermap.org base url version (default)
-`apiEndPoint`|`string`|"/air_pollution"| openweathermap.org base url endpoint (default)
-`initialDelay`| 0 - n| 0 | delay before requesting data
-`showLocation`|`Boolean`| true (default) - false | include location in header
-`showIndex`|`Boolean`| true (default) - false |  display AQI
-`appendLocationNameToHeader`|`Boolean`| true (default) - false |  display location in header
-`animationSpeed`| 0 - n | 1000 |  DOM animation speed
+Option|Default|Description
+------|------|-----------
+`appId`|not available| openweathermap.org API key (required)
+`location`|not available| location to show Air Quality Index values
+`lat`|numeric format nn.nnnn| latitude of the location (Required)
+`lon`|numeric format nn.nnnn| longitude of the location (Required)
+`apiBase`|"api.apenweathermap.org/data/"| openweathermap.org base url (default)
+`apiVersion`|"2.5"| openweathermap.org base url version (default)
+`apiEndPoint`|"/air_pollution"| openweathermap.org base url endpoint (default)
+`initialDelay`| 0 | delay before requesting data
+`showLocation`| true | include location in header
+`showIndex`| true |  display AQI
+`appendLocationNameToHeader`| true  |  display location in header
+`animationSpeed`| 1000 |  DOM animation speed
 
 ## Sending notifications to the module
 

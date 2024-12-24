@@ -130,7 +130,7 @@ Module.register("MMM-AirQuality", {
     let message = ''
     if (this.config.appId === '') {
       message = `Please set an API key for ${this.name}<br>You can get one at <a href='https://api.openweather.org/'>https://api.openweathermap.org</a>`
-    } else if (this.config.location ==='') {
+    } else if (this.config.location === '') {
       message = `Please set a location for ${this.name}!`
     }
 

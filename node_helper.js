@@ -5,7 +5,7 @@
  * MIT Licensed.
  */
 
-const NodeHelper = require('node_helper')
-const helper = require('./helper')
+const NodeHelper = require("node_helper")
+const helper = require("./helper")
 
 module.exports = NodeHelper.create(helper)

@@ -7,11 +7,11 @@
 
 module.exports = {
   notifications: {
-    DATA: 'AIR_QUALITY_DATA',
-    DATA_RESPONSE: 'AIR_QUALITY_DATA_RESPONSE',
+    DATA: "AIR_QUALITY_DATA",
+    DATA_RESPONSE: "AIR_QUALITY_DATA_RESPONSE",
   },
   start: function () {
-    console.log('AirQuality helper started ...')
+    console.log("AirQuality helper started ...")
   },
   loadData: async function (payload) {
     const self = this
@@ -24,7 +24,7 @@ module.exports = {
 
     self.sendSocketNotification(self.notifications.DATA_RESPONSE, {
       payloadReturn: result,
-      status: 'OK',
+      status: "OK",
       identifier: payload.identifier,
     })
   },

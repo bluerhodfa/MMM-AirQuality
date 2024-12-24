@@ -42,12 +42,6 @@ Module.register("MMM-AirQuality", {
     HAZARDOUS: "#7e0023",
     UNKNOWN: "#333333",
   },
-  /**
-   * Apply the default styles.
-   */
-  getStyles() {
-    return ["MMM-AirQuality.css"]
-  },
 
   /**
    * Pseudo-constructor for our module. Initialize stuff here.

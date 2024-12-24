@@ -20,7 +20,7 @@ module.exports = {
 
     const result = await fetch(url)
       .then(response => response.json())
-      console.log(`JSON response = `+JSON.stringify(result))
+      console.log(`JSON response = `+ JSON.stringify(result))
 
     self.sendSocketNotification(self.notifications.DATA_RESPONSE, {
       payloadReturn: result,

@@ -12,6 +12,7 @@ Module.register("MMM-AirQuality", {
     updateInterval: 30, // every 30 minutes
     location: "",
     showLocation: true,
+    showIndex: true,
     appendLocationNameToHeader: true,
     animationSpeed: 1000,
     appId: "",
@@ -20,7 +21,7 @@ Module.register("MMM-AirQuality", {
     apiBase: "api.openweathermap.org/data/",
     apiVersion: "2.5",
     apiEndPoint: "/air_pollution",
-    debug:false
+    debug: false
   },
   notifications: {
     DATA: "AIR_QUALITY_DATA",

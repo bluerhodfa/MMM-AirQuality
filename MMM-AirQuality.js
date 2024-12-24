@@ -34,8 +34,8 @@ Module.register("MMM-AirQuality", {
     POOR: '#cc0033',
     HIGH: '#cc0033',
     UNHEALTHY_FOR_SENSITIVE_GROUPS: '#ff9933',
-    VERY_POOR: '#ff0000'
-    VERY_HIGH: '#ff0000'
+    VERY_POOR: '#ff0000',
+    VERY_HIGH: '#ff0000',
     UNHEALTHY: '#cc0033',
     VERY_UNHEALTHY: '#660099',
     HAZARDOUS: '#7e0023',

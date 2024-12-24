@@ -12,7 +12,7 @@
     {% if message %}
         {{ message|safe }}
     {% elif loaded %}
-        <div class="medium" style="color: {{ color }}"><i class="fa-solid fa-smog"></i> {{ impact }}{% if showIndex %} ({{ index }}){% endif %}</div>
+        <div class="medium" style="colour: {{ color }}"><i class="fa-solid fa-smog"></i> {{ impact }}{% if showIndex %} ({{ index }}){% endif %}</div>
             {% if showLocation %}
         <div class="small">{{ city }}</div>
             {% endif %}

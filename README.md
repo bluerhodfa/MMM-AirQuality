@@ -2,6 +2,8 @@
 
  MagicMirror² module to display Air Pollution data from <https://OpenWeatherMap.org>
 
+ Based on <https://github.com/CFenner/MMM-AirQuality>
+
 ![Example of MMM-AirQuality](./AirQualityImage.png)
 ![with header location ](./AirQualityImage1.png)
 

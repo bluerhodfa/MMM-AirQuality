@@ -26,7 +26,7 @@ Module.register("MMM-AirQuality", {
     DATA: "AIR_QUALITY_DATA",
     DATA_RESPONSE: "AIR_QUALITY_DATA_RESPONSE",
   },
-  colors: {
+  colours: {
     GOOD: '#009966',
     LOW: '#009966',
     FAIR: '#ffde33',
@@ -123,7 +123,7 @@ Module.register("MMM-AirQuality", {
   gettemplate: function () {
     return `${this.name}.njk`
   },
-  getTemplateData§: function() {
+  getTemplateData: function() {
     let message = ''
     if (this.config.appId === '') {
       message = `Please set an API key for ${this.name}<br>You can get one at <a href='https://api.openweather.org/`>https://api.openweathermap.org</a>`

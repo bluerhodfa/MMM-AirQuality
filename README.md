@@ -57,12 +57,11 @@ Option|Possible values|Default|Description
 `apiBase`|`string`|"api.apenweathermap.org/data/"| openweathermap.org base url (default)
 `apiVersion`|`string`|"2.5"| openweathermap.org base url version (default)
 `apiEndPoint`|`string`|"/air_pollution"| openweathermap.org base url endpoint (default)
-`initialDelay`|`number`| 0 - n | delay before requesting data
+`initialDelay`| 0 - n| 0 | delay before requesting data
 `showLocation`|`Boolean`| true (default) - false | include location in header
 `showIndex`|`Boolean`| true (default) - false |  display AQI
 `appendLocationNameToHeader`|`Boolean`| true (default) - false |  display location in header
-`appendLocationNameToHeader`|`Boolean`| true (default) - false |  display location in header
-`animationSpeed`|`number`| 1000 (default) - n |  module animation speed
+`animationSpeed`| 0 - n | 1000 |  DOM animation speed
 
 ## Sending notifications to the module
 

@@ -47,19 +47,11 @@ Or you could use all the options:
   			position: "top_right",
   			config: {
     			appId: "{your openweathermap api key}",
-				location: "Oban",                   // Location
+                location: "Oban",                   // Location
     			lat: "56.4127",		                // Latitude of your location (Oban in this example)
     			lon: "-5.4706",                     // Longitude of your location
-    			showPM10: true,                     // Show PM10 data
-    			showPM25: true,                     // Show PM2.5 data
     			updateInterval: 3600000,            // Update every hour ( ambee has 100 calls a day. and app uses 3 endpoints so lowest updateInterval is : ~2,618,181 milliseconds (about 43.6 minutes). )
     			animationSpeed: 1000,               // 1 second for DOM animations
-    			showPollenForecast: true,           // Control pollen forecast display
-    			showGrassPollen: true,              // Option to show or hide Grass pollen
-    			showTreePollen: true,               // Option to show or hide Tree pollen
-    			showWeedPollen: true,               // Option to show or hide Weed pollen
-    			startsilentHour: 21,                // Begin ignore period at 21:00
-    			endsilentHour: 7,                   // End ignore period at 07:00
     			debug: false                        // Set to true to enable logging for debugging
   		}
 		},

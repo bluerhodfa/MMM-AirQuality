@@ -16,7 +16,7 @@ In your terminal, go to your [MagicMirror²][mm] Module folder and clone MMM-Air
 ```bash
 cd ~/MagicMirror/modules
 git clone https://github.com/bluerhodfa/MMM-AirQuality.git
-mpm install
+npm install
 ```
 
 ### Update

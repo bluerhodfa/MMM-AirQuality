@@ -30,44 +30,45 @@ git pull
 
 ## Using the module
 
-To use this module, add it to the modules array in the `config/config.js` file:
-
-```js
-    {
-        module: 'MMM-Template',
-        position: 'lower_third'
-    },
-```
-
-Or you could use all the options:
+To use this module, add the following as a minimum to the modules array in the `config/config.js` file:
 
 ```js
 {
- 			module: "MMM-AirQuality",
-  			position: "top_right",
-  			config: {
-    			appId: "{your openweathermap api key}",
-                location: "Oban",                   // Location
-    			lat: "56.4127",		                // Latitude of your location (Oban in this example)
-    			lon: "-5.4706",                     // Longitude of your location
-    			updateInterval: 3600000,            // Update every hour
-    			animationSpeed: 1000,               // 1 second for DOM animations
-    			debug: false                        // Set to true to enable logging for debugging
-  		}
-		},
+ module: "MMM-AirQuality",
+ position: "top_right",
+ config: {
+    appId: "{your openweathermap.org api key}",
+    location: "Oban",                   // Location
+    lat: "56.4127",                     // Latitude of your location (Oban in this example)
+    lon: "-5.4706",                     // Longitude of your location
+ }
+},
 ```
 
 ## Configuration options
 
 Option|Possible values|Default|Description
 ------|------|------|-----------
-`exampleContent`|`string`|not available|The content to show on the page
-
+`appId`|`string`|not available| openweathermap.org API key (required)
+`location`|`string`|not available| location to show Air Quality Index values
+`apiBase`|`string`|"api.apenweathermap.org/data/"| openweathermap.org base url (required)
+`apiVersion`|`string`|"2.5"| openweathermap.org base url version (required)
+`apiEndPoint`|`string`|"/air_pollution"| openweathermap.org base url endpoint (required)
+`lat`|`string`|numeric format nn.nnnn| latitude of the location (Required)
+`lon`|`string`|numeric format nn.nnnn| longitude of the location (Required)
+`initialDelay`|`number`| 0 - n | delay before requesting data
+`showLocation`|`Boolean`| true (default) - false | include location in header 
+`showIndex`|`Boolean`| true (default) - false |  display AQI
+`appendLocationNameToHeader`|``| true (default) - false |  display location in header 
+`appendLocationNameToHeader`|``| true (default) - false |  display location in header 
+`animationSpeed`|`number`| 1000 (default) - n |  module animation speed 
+ 
 ## Sending notifications to the module
 
 Notification|Description
 ------|-----------
-`TEMPLATE_RANDOM_TEXT`|Payload must contain the text that needs to be shown on this module
+`AIR_QUALITY_DATA`| Request Payload 
+`AIR_QUALITY_DATA_RESPONSE`| Receive response 
 
 ## Developer commands
 

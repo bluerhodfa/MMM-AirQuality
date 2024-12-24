@@ -181,7 +181,7 @@ Module.register("MMM-AirQuality", {
           if (payload.status === 'OK') {
             console.log('Data %o ', payload.paloadReturn)
             self.updateData(payload.payloadReturn)
-            self.updataDom(this.animationSpeed)
+           // self.updataDom(this.animationSpeed)
           } else {
             console.log('DATA FAILED ' + payload.message)
           }

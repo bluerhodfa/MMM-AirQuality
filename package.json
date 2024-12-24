@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluerhodfa/MMM-AirQuality.git.git"
+    "url": "git+https://github.com/bluerhodfa/MMM-AirQuality.git"
   },
   "keywords": [
     "MagicMirror, module, AirQuality"

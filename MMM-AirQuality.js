@@ -142,7 +142,7 @@ Module.register("MMM-AirQuality", {
       city: this.data.city,
       index: this.data.value,
       so2: this.data.so2,
-      no2: this.dat.no2,
+      no2: this.data.no2,
       pm2_5: this.data.pm2_5,
       pm10: this.data.pm10,
       o3: this.data.o3,

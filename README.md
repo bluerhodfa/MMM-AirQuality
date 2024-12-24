@@ -4,7 +4,7 @@
 
 # MMM-AirQuality
 
-![Example of MMM-AirQuality](./example_1.png)
+![Example of MMM-AirQuality](./AirQualityImage.png)
 
 [Module description]
 

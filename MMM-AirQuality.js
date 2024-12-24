@@ -124,7 +124,7 @@ Module.register("MMM-AirQuality", {
     }
     return header
   },
-  gettemplate: function () {
+  getTemplate: function () {
     return `${this.name}.njk`
   },
   getTemplateData: function() {

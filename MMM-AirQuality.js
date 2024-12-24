@@ -148,20 +148,20 @@ Module.register("MMM-AirQuality", {
     showIndex: this.config.showIndex,
     labelLoading: this.translate('LOADING'),
     message
-  }
-},
-getTranslations: function () {
-  return {
-    en: 'l10n/en.json',
-    de: 'l10n/de.json',
-  }
-},
-getScripts: function () {
+  },
+  getTranslations: function () {
+    return {
+      en: 'l10n/en.json',
+      de: 'l10n/de.json',
+    }
+  },
+  getScripts: function () {
+    return
 
-},
-getStyles: function () {
-  return ["MMM-AirQuality.css"]
-},
+  },
+  getStyles: function () {
+    return ["MMM-AirQuality.css"]
+  },
 
   /**
    * Handle notifications received by the node helper.

@@ -52,7 +52,10 @@ Module.register("MMM-AirQuality", {
    * Pseudo-constructor for our module. Initialize stuff here.
    */
   start: function () {
-    const self = this
+    var self = this
+      setInterval( function() {
+        self.updateDom(); 
+      }, 1000);
 
     Log.info(`Starting module: ${this.name}`)
     self.loaded = false
@@ -184,7 +187,7 @@ Module.register("MMM-AirQuality", {
           if (payload.status === 'OK') {
             console.log('Data %o ', payload.payloadReturn)
             self.updateData(payload.payloadReturn)
-           // self.updataDom(this.animationSpeed)
+            self.updataDom(this.animationSpeed)
           } else {
             console.log('DATA FAILED ' + payload.message)
           }

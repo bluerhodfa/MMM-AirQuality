@@ -53,9 +53,6 @@ Module.register("MMM-AirQuality", {
    */
   start: function () {
     var self = this
-      setInterval( function() {
-        self.updateDom(); // no speed defined, so it updates instantly. 
-      }, 1000);  //perform every 1000 milliseconds.
 
     Log.info(`Starting module: ${this.name}`)
     self.loaded = false

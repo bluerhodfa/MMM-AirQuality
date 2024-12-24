@@ -7,7 +7,7 @@
 ![Example of MMM-AirQuality](./AirQualityImage.png)
 ![with header location ](./AirQualityImage1.png)
 
-[Module description]
+## Module description
 
 MagicMirror module to display Air Pollution data from OpenWeatherMap.org
 You will require a One Call API key from <https:/openweathermap.org/api>, subscription required with 1,000 API calls per day for free

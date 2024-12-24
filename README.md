@@ -50,7 +50,7 @@ Or you could use all the options:
                 location: "Oban",                   // Location
     			lat: "56.4127",		                // Latitude of your location (Oban in this example)
     			lon: "-5.4706",                     // Longitude of your location
-    			updateInterval: 3600000,            // Update every hour ( ambee has 100 calls a day. and app uses 3 endpoints so lowest updateInterval is : ~2,618,181 milliseconds (about 43.6 minutes). )
+    			updateInterval: 3600000,            // Update every hour
     			animationSpeed: 1000,               // 1 second for DOM animations
     			debug: false                        // Set to true to enable logging for debugging
   		}

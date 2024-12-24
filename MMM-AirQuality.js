@@ -156,10 +156,12 @@ Module.register("MMM-AirQuality", {
     }
   },
   getScripts: function () {
-    return
+    return ['https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js'] 
+
 
   },
   getStyles: function () {
+    return ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/all.min.css'] 
     return ["MMM-AirQuality.css"]
   },
 

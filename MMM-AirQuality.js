@@ -77,9 +77,6 @@ Module.register("MMM-AirQuality", {
     this.data.co = response.list[0].components.co
     this.data.no = response.list[0].components.no
     this.data.nh3 = response.list[0].components.nh3
-
-    console.log(`JSON response = `+JSON.stringify(response.list[0].main.aqi))
-    console.log(`JSON response = `+JSON.stringify(response.list[0].components.so2))
   },
   getImpact: function (index) {
     // AQI default openweathermap impact

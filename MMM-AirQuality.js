@@ -174,7 +174,6 @@ Module.register("MMM-AirQuality", {
       case self.notifications.DATA_RESPONSE:
         if (payload.identifier === this.identifier) {
           if (payload.status === "OK") {
-            console.log("Data %o ", payload.payloadReturn)
             self.updateData(payload.payloadReturn)
             self.updateDom(this.animationSpeed)
           } else {

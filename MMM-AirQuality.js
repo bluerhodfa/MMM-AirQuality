@@ -141,6 +141,7 @@ Module.register("MMM-AirQuality", {
       colour: this.data.colour,
       showLocation: this.config.showLocation && !this.config.appendLocationNameToHeader,
       showIndex: this.config.showIndex,
+      showPollutants: this.config.showPollutants,
       labelLoading: this.translate("LOADING"),
       message
     }

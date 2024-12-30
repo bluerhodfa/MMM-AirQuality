@@ -12,6 +12,7 @@ Module.register("MMM-AirQuality", {
     updateInterval: 30, // every 30 minutes
     location: "",
     showLocation: true,
+    showPollutants: false,
     showIndex: true,
     appendLocationNameToHeader: true,
     animationSpeed: 1000,

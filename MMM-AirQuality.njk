@@ -16,6 +16,7 @@
             {% if showLocation %}
         <div class="small">{{ city }}</div>
             {% endif %}
+        {% if showPollutants %}    
         <br>
         <div>
             <table class="small">
@@ -74,6 +75,7 @@
                 </tbody>
             </table>
         </div>
+        {% endif %}
     {% else %}
         <div class="dimmed light small">
             {{ labelLoading|safe }}

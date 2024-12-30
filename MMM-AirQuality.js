@@ -137,6 +137,8 @@ Module.register("MMM-AirQuality", {
       pm10: this.data.pm10,
       o3: this.data.o3,
       co: this.data.co,
+      no: this.data.no,
+      nh3: this.data.nh3,
       impact: this.translate(this.data.impact),
       colour: this.data.colour,
       showLocation: this.config.showLocation && !this.config.appendLocationNameToHeader,

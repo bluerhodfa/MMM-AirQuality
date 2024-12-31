@@ -62,6 +62,7 @@ Option|Default|Description
 `initialDelay`| 0 | delay before requesting data
 `showLocation`| true | include location in header
 `showIndex`| true |  display AQI
+`showPollutants`| false | show pollutants used to calculate AQI
 `appendLocationNameToHeader`| true  |  display location in header
 `animationSpeed`| 1000 |  DOM animation speed
 
